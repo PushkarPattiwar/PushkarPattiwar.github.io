@@ -1,0 +1,51 @@
+{
+  "name": "pushkar-pattiwar-portfolio",
+  "version": "1.0.0",
+  "description": "Modern, responsive portfolio website for Pushkar Pattiwar - Software Engineer specializing in AI & Web Development",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 3000 -o",
+    "dev": "npx live-server --port=3000 --open=/",
+    "build": "echo 'Static site - no build process needed'",
+    "test": "npx playwright test",
+    "lint": "npx eslint script.js",
+    "format": "npx prettier --write *.html *.css *.js",
+    "lighthouse": "npx lighthouse http://localhost:3000 --output html --output-path ./lighthouse-report.html"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "software-engineer",
+    "ai",
+    "machine-learning",
+    "web-development",
+    "responsive",
+    "modern"
+  ],
+  "author": {
+    "name": "Pushkar Pattiwar",
+    "email": "pushkarpattiwar@gmail.com",
+    "url": "https://github.com/pushkarpattiwar"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pushkarpattiwar/portfolio"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "eslint": "^8.50.0",
+    "http-server": "^14.1.1",
+    "lighthouse": "^11.0.0",
+    "live-server": "^1.2.2",
+    "prettier": "^3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

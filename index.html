@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pushkar Pattiwar - Software Engineer | AI & Web Development</title>
+    <meta
+      name="description"
+      content="Software Engineer specializing in AI & Web Development. B.E. in Information Technology from PICT Pune with 9.2 CGPA. Experience at SAS, BitSolve, and Bajaj Finserv."
+    />
+    <meta name="keywords" content="Software Engineer, AI, Machine Learning, Web Development, Python, JavaScript, React, Portfolio, PICT Pune" />
+    <meta name="author" content="Pushkar Pattiwar" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Pushkar Pattiwar - Software Engineer | AI & Web Development" />
+    <meta property="og:description" content="Explore my portfolio showcasing expertise in AI, machine learning, and full-stack development. View my projects, experience, and achievements." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pushkarpattiwar.github.io/portfolio/" />
+    <meta property="og:image" content="https://pushkarpattiwar.github.io/portfolio/assets/profile-placeholder.jpg" />
+    <meta property="og:site_name" content="Pushkar Pattiwar Portfolio" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pushkar Pattiwar - Software Engineer" />
+    <meta name="twitter:description" content="Software Engineer specializing in AI & Web Development. View my portfolio and projects." />
+    <meta name="twitter:image" content="https://pushkarpattiwar.github.io/portfolio/assets/profile-placeholder.jpg" />
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#3B82F6" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Pushkar Portfolio" />
+    <link rel="apple-touch-icon" href="assets/profile-placeholder.jpg" />
+    <link rel="manifest" href="manifest.json" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/profile-placeholder.jpg" />
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Pushkar Pattiwar",
+      "jobTitle": "Software Engineer",
+      "description": "Software Engineer specializing in AI & Web Development",
+      "url": "https://pushkarpattiwar.github.io/portfolio/",
+      "image": "https://pushkarpattiwar.github.io/portfolio/assets/profile-placeholder.jpg",
+      "sameAs": [
+        "https://linkedin.com/in/pushkarpattiwar",
+        "https://github.com/pushkarpattiwar"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Pune Institute of Computer Technology"
+      },
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Web Development",
+        "Python",
+        "JavaScript",
+        "React"
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">Pushkar Pattiwar</a>
+        </div>
+        <div class="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#achievements" class="nav-link">Achievements</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="greeting">Hello, I'm</span>
+              <span class="name">Pushkar Pattiwar</span>
+            </h1>
+            <p class="hero-subtitle">
+              Software Engineer | AI & Web Development Enthusiast
+            </p>
+            <p class="hero-description">
+              Passionate about building innovative solutions with cutting-edge
+              technologies. Specializing in AI, machine learning, and full-stack
+              development.
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">Get In Touch</a>
+              <a href="#projects" class="btn btn-secondary">View My Work</a>
+            </div>
+            <div class="hero-social">
+              <a
+                href="mailto:pushkarpattiwar@gmail.com"
+                class="social-link"
+                title="Email"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a
+                href="https://linkedin.com/in/pushkarpattiwar"
+                class="social-link"
+                title="LinkedIn"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/pushkarpattiwar"
+                class="social-link"
+                title="GitHub"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="profile-card">
+              <div class="profile-image">
+                <img
+                  src="assets/profile-placeholder.jpg"
+                  alt="Pushkar Pattiwar"
+                  id="profileImage"
+                />
+              </div>
+              <div class="profile-info">
+                <h3>Pushkar Pattiwar</h3>
+                <p>Software Engineer</p>
+                <div class="profile-stats">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know me better</p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-intro">
+              I'm a passionate Software Engineer with a strong foundation in
+              Information Technology, having graduated with a CGPA of 9.2 from
+              Pune Institute of Computer Technology (PICT), Pune.
+            </p>
+            <p>
+              My journey in technology is driven by an insatiable curiosity for
+              artificial intelligence, machine learning, and building innovative
+              tools that solve real-world problems. I thrive on transforming
+              complex challenges into elegant, user-friendly solutions.
+            </p>
+            <p>
+              With experience across domains like fintech and enterprise solutions, and a strong interest in accessibility and AI-driven applications, I bring a unique perspective to every project. I’m constantly learning and adapting to new technologies, ensuring I stay at the forefront of innovation.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                  <h4>Education</h4>
+                  <p>B.E. Information Technology<br />PICT Pune (CGPA: 9.2)</p>
+                </div>
+              </div>
+              <div class="highlight">
+                <i class="fas fa-code"></i>
+                <div>
+                  <h4>Specialization</h4>
+                  <p>AI, ML & Full-Stack<br />Development</p>
+                </div>
+              </div>
+              <div class="highlight">
+                <i class="fas fa-trophy"></i>
+                <div>
+                  <h4>Achievement</h4>
+                  <p>Multiple Hackathon<br />Winner</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual">
+            <div class="skills-preview">
+              <div class="skill-item">
+                <span class="skill-name">Python</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">C++</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">React</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Machine Learning</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Experience</h2>
+          <p class="section-subtitle">My professional journey</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Software Engineer</h3>
+                <span class="company">SAS</span>
+                <span class="duration">2024 - Present</span>
+              </div>
+              <p class="timeline-description">
+                Developing enterprise-level analytics solutions and contributing
+                to advanced statistical software. Working with cutting-edge data
+                science tools and machine learning algorithms to deliver
+                high-performance solutions for Fortune 500 companies.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Python</span>
+                <span class="tag">React</span>
+                <span class="tag">Go</span>
+                <span class="tag">Cirrcus Builder</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Software Developer</h3>
+                <span class="company">BitSolve Technologies</span>
+                <span class="duration">Jan'2024 - March'2024</span>
+              </div>
+              <p class="timeline-description">
+                Developed an automated project and resource allocation tool using Python and MySQL, reducing manual effort by 85% and improving accuracy by 94%. Optimized departmental workflows for 60+ users, increasing overall operational efficiency by 60%.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Python</span>
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Software Engineering Intern</h3>
+                <span class="company">Bajaj Finserv</span>
+                <span class="duration">Sept'2023 - Nov'2023</span>
+              </div>
+              <p class="timeline-description">
+                Developed a Selenium and OpenCV-based automated UI testing tool, reducing test time by 40%. Built a custom language translation model with 98% accuracy using advanced NLP frameworks, enabling efficient multilingual support.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Selenium</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">LLM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Some of my recent work</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/vmail-preview.jpg" alt="V-Mail Project" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/PushkarPattiwar/V-Mail"
+                    class="project-link"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" class="project-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">V-Mail</h3>
+              <p class="project-description">
+                Developed a voice-enabled email system using Tkinter with STT and TTS integration, enabling hands-free control, non-visual inbox management, and inclusive user interaction.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Tkinter</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">SQlite</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/jas-preview.jpg" alt="JAS PICT-INC Project" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/PushkarPattiwar/JAS-INC"
+                    class="project-link"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" class="project-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">JAS PICT-INC</h3>
+              <p class="project-description">
+                Developed an automated judge allocation system for 250+ judges and 1000+ projects using React, Node.js, Python, and MySQL, streamlining event management and improving efficiency.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/ragbot-preview.jpg"
+                alt="Multi-PDF RAGBot Project"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/PushkarPattiwar/Multi-PDF-RAGBot"
+                    class="project-link"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" class="project-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Multi-PDF RAGBot</h3>
+              <p class="project-description">
+                Built a chatbot using LangChain, FAISS, and OpenAI embeddings to enable contextual Q&A across multiple PDFs, featuring a lightweight Streamlit interface for intuitive interaction.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">LangChain</span>
+                <span class="tech-tag">OpenAI</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">Vector DB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Technologies I work with</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fas fa-code"></i>
+              Programming Languages
+            </h3>
+            <div class="skills-list">
+              <div class="skill-badge">Python</div>
+              <div class="skill-badge">Go</div>
+              <div class="skill-badge">JavaScript</div>
+              <div class="skill-badge">TypeScript</div>
+              <div class="skill-badge">C++</div>
+              <div class="skill-badge">SQL</div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fas fa-layer-group"></i>
+              Frameworks & Libraries
+            </h3>
+            <div class="skills-list">
+              <div class="skill-badge">React</div>
+              <div class="skill-badge">Node.js</div>
+              <div class="skill-badge">Django</div>
+              <div class="skill-badge">Django Rest Framework</div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fas fa-database"></i>
+              Databases
+            </h3>
+            <div class="skills-list">
+              <div class="skill-badge">MySQL</div>
+              <div class="skill-badge">PostgreSQL</div>
+              <div class="skill-badge">MongoDB</div>
+              <div class="skill-badge">Redis</div>
+              <div class="skill-badge">Elasticsearch</div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fas fa-brain"></i>
+              AI & Machine Learning
+            </h3>
+            <div class="skills-list">
+              <div class="skill-badge">TensorFlow</div>
+              <div class="skill-badge">PyTorch</div>
+              <div class="skill-badge">Scikit-learn</div>
+              <div class="skill-badge">OpenAI</div>
+              <div class="skill-badge">LangChain</div>
+              <div class="skill-badge">Hugging Face</div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fas fa-cloud"></i>
+              Cloud & DevOps
+            </h3>
+            <div class="skills-list">
+              <div class="skill-badge">AWS</div>
+              <div class="skill-badge">Docker</div>
+              <div class="skill-badge">Kubernetes</div>
+              <div class="skill-badge">Git</div>
+              <div class="skill-badge">CI/CD</div>
+              <div class="skill-badge">Linux</div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fas fa-tools"></i>
+              Tools & Concepts
+            </h3>
+            <div class="skills-list">
+              <div class="skill-badge">REST APIs</div>
+              <div class="skill-badge">Microservices</div>
+              <div class="skill-badge">Agile</div>
+              <div class="skill-badge">Test-Driven Development</div>
+              <div class="skill-badge">System Design</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Achievements & Publications</h2>
+          <p class="section-subtitle">Recognition and contributions</p>
+        </div>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="achievement-content">
+              <h3> InnovaThon–‘Most Impactful Innovator’ </h3>
+              <p class="achievement-year">2023</p>
+              <p class="achievement-description">
+                First Runner-Up in InnovaThon for developing a versatile automation system adaptable across domains, streamlining processes, improving efficiency, and enhancing accuracy.
+              </p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <div class="achievement-content">
+              <h3>IEEE Paper Publication</h3>
+              <p class="achievement-year">2025</p>
+              <p class="achievement-description">
+                Published research paper on "Machine Learning Approaches for
+                Predictive Healthcare Analytics" in IEEE International
+                Conference.
+              </p>
+              <a href="#" class="achievement-link" target="_blank"
+                >View Paper</a
+              >
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="achievement-content">
+              <h3>2nd Runner-Up in the Byte Spark Leadership Programme</h3>
+              <p class="achievement-year">2023</p>
+              <p class="achievement-description">
+                Made an Automated Screenshot Comparison Tool.
+              </p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="achievement-content">
+              <h3>Academic Excellence</h3>
+              <p class="achievement-year">2025</p>
+              <p class="achievement-description">
+                Graduated with CGPA 9.2/10 from PICT Pune, receiving the Dean's
+                List recognition for outstanding academic performance.
+              </p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <div class="achievement-content">
+              <h3>Published Research Paper: V-Mail</h3>
+              <p class="achievement-year">Feb 2025</p>
+              <p class="achievement-description">
+                V-Mail: Bridging the Gap in Communication for the Visually Impaired, PIJET – PICT International Journal of Engineering and Technology.
+              </p>
+              <a href="https://pijet.org/papers/volume-2%20issue-1/Final%20Revised%20Paper_Pijet-09_Done.pdf" class="achievement-link" target="_blank"
+                >View Paper</a
+              >
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <div class="achievement-content">
+              <h3>Published Research Paper: Resource Allocation</h3>
+              <p class="achievement-year">2024</p>
+              <p class="achievement-description">
+                From Manual to Automated: Transforming Resource Allocation, International Journal of Engineering Research and Technology (IJERT).
+              </p>
+              <a href="https://www.ijert.org/from-manual-to-automated-transforming-resource-allocation" class="achievement-link" target="_blank"
+                >View Paper</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Let's work together</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-text">
+              <h3>Let's create something amazing together</h3>
+              <p>
+                I'm always interested in new opportunities and exciting
+                projects. Whether you have a question, want to collaborate, or
+                just want to say hi, I'd love to hear from you.
+              </p>
+            </div>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:pushkarrp03@gmail.com"
+                    >pushkarrp03@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <div>
+                  <h4>LinkedIn</h4>
+                  <a
+                    href="https://linkedin.com/in/pushkarpattiwar"
+                    target="_blank"
+                    >linkedin.com/in/pushkarpattiwar</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <div>
+                  <h4>GitHub</h4>
+                  <a href="https://github.com/pushkarpattiwar" target="_blank"
+                    >github.com/pushkarpattiwar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-text">
+            <p>&copy; Pushkar Pattiwar. All rights reserved.</p>
+            <p>Built with passion and modern web technologies.</p>
+          </div>
+          <div class="footer-social">
+            <a href="mailto:pushkarrp03@gmail.com" class="social-link">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/pushkarpattiwar"
+              class="social-link"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/pushkarpattiwar"
+              class="social-link"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

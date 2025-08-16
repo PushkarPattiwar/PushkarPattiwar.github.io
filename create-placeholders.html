@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Placeholder Images</title>
+</head>
+<body>
+    <canvas id="profileCanvas" width="300" height="300" style="display: none;"></canvas>
+    <canvas id="vmailCanvas" width="400" height="250" style="display: none;"></canvas>
+    <canvas id="jasCanvas" width="400" height="250" style="display: none;"></canvas>
+    <canvas id="ragbotCanvas" width="400" height="250" style="display: none;"></canvas>
+
+    <script>
+        // Create profile placeholder
+        const profileCanvas = document.getElementById('profileCanvas');
+        const profileCtx = profileCanvas.getContext('2d');
+        
+        // Background gradient
+        const gradient = profileCtx.createLinearGradient(0, 0, 300, 300);
+        gradient.addColorStop(0, '#3B82F6');
+        gradient.addColorStop(1, '#06B6D4');
+        profileCtx.fillStyle = gradient;
+        profileCtx.fillRect(0, 0, 300, 300);
+        
+        // Profile icon
+        profileCtx.fillStyle = 'white';
+        profileCtx.beginPath();
+        profileCtx.arc(150, 120, 40, 0, 2 * Math.PI);
+        profileCtx.fill();
+        
+        // Body
+        profileCtx.beginPath();
+        profileCtx.arc(150, 200, 60, 0, Math.PI, true);
+        profileCtx.fill();
+        
+        // Text
+        profileCtx.font = '16px Arial';
+        profileCtx.textAlign = 'center';
+        profileCtx.fillText('Pushkar Pattiwar', 150, 270);
+        
+        // Create V-Mail placeholder
+        const vmailCanvas = document.getElementById('vmailCanvas');
+        const vmailCtx = vmailCanvas.getContext('2d');
+        
+        const vmailGradient = vmailCtx.createLinearGradient(0, 0, 400, 250);
+        vmailGradient.addColorStop(0, '#10B981');
+        vmailGradient.addColorStop(1, '#059669');
+        vmailCtx.fillStyle = vmailGradient;
+        vmailCtx.fillRect(0, 0, 400, 250);
+        
+        // Email icon
+        vmailCtx.fillStyle = 'white';
+        vmailCtx.fillRect(150, 100, 100, 60);
+        vmailCtx.strokeStyle = 'white';
+        vmailCtx.lineWidth = 3;
+        vmailCtx.beginPath();
+        vmailCtx.moveTo(150, 100);
+        vmailCtx.lineTo(200, 130);
+        vmailCtx.lineTo(250, 100);
+        vmailCtx.stroke();
+        
+        vmailCtx.font = '20px Arial';
+        vmailCtx.textAlign = 'center';
+        vmailCtx.fillText('V-Mail', 200, 200);
+        
+        // Create JAS placeholder
+        const jasCanvas = document.getElementById('jasCanvas');
+        const jasCtx = jasCanvas.getContext('2d');
+        
+        const jasGradient = jasCtx.createLinearGradient(0, 0, 400, 250);
+        jasGradient.addColorStop(0, '#8B5CF6');
+        jasGradient.addColorStop(1, '#7C3AED');
+        jasCtx.fillStyle = jasGradient;
+        jasCtx.fillRect(0, 0, 400, 250);
+        
+        // Building icon
+        jasCtx.fillStyle = 'white';
+        jasCtx.fillRect(160, 80, 80, 100);
+        jasCtx.fillRect(170, 90, 15, 15);
+        jasCtx.fillRect(195, 90, 15, 15);
+        jasCtx.fillRect(220, 90, 15, 15);
+        jasCtx.fillRect(170, 110, 15, 15);
+        jasCtx.fillRect(195, 110, 15, 15);
+        jasCtx.fillRect(220, 110, 15, 15);
+        
+        jasCtx.font = '20px Arial';
+        jasCtx.textAlign = 'center';
+        jasCtx.fillText('JAS PICT-INC', 200, 210);
+        
+        // Create RAGBot placeholder
+        const ragbotCanvas = document.getElementById('ragbotCanvas');
+        const ragbotCtx = ragbotCanvas.getContext('2d');
+        
+        const ragbotGradient = ragbotCtx.createLinearGradient(0, 0, 400, 250);
+        ragbotGradient.addColorStop(0, '#F59E0B');
+        ragbotGradient.addColorStop(1, '#D97706');
+        ragbotCtx.fillStyle = ragbotGradient;
+        ragbotCtx.fillRect(0, 0, 400, 250);
+        
+        // Bot icon
+        ragbotCtx.fillStyle = 'white';
+        ragbotCtx.fillRect(170, 80, 60, 60);
+        ragbotCtx.fillRect(180, 90, 10, 10);
+        ragbotCtx.fillRect(210, 90, 10, 10);
+        ragbotCtx.fillRect(185, 110, 30, 5);
+        
+        ragbotCtx.font = '18px Arial';
+        ragbotCtx.textAlign = 'center';
+        ragbotCtx.fillText('Multi-PDF RAGBot', 200, 170);
+        
+        // Download images
+        function downloadCanvas(canvas, filename) {
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+        
+        // Auto-download all images
+        setTimeout(() => {
+            downloadCanvas(profileCanvas, 'profile-placeholder.png');
+            downloadCanvas(vmailCanvas, 'vmail-preview.png');
+            downloadCanvas(jasCanvas, 'jas-preview.png');
+            downloadCanvas(ragbotCanvas, 'ragbot-preview.png');
+        }, 1000);
+    </script>
+</body>
+</html>
